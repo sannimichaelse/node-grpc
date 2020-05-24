@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  grpc-server:
+    container_name: grpc-server
+    restart: always
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    ports:
+      - "30043:30043"
+  grpc-client:
+    container_name: grpc-client
+    restart: always
+    build:
+      context: .
+      dockerfile: client/Dockerfile
+    ports:
+      - "3000:3000"

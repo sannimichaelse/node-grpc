@@ -1,0 +1,26 @@
+{
+    "name": "node-grpc",
+    "version": "1.0.0",
+    "description": "A simple node api built with gRPC",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server/server.js"
+    },
+    "keywords": [
+        "gRPC",
+        "NodeJS",
+        "Docker",
+        "Express"
+    ],
+    "author": "Sanni Michael Tomiwa",
+    "license": "ISC",
+    "dependencies": {
+        "@grpc/proto-loader": "^0.5.4",
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "grpc": "^1.24.2",
+        "hbs": "^4.1.1",
+        "uuid": "^8.1.0"
+    }
+}
