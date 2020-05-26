@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>LogRocket CRUD with gRPC and Node</title>
+    <title>CRUD with gRPC and Node</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
@@ -16,11 +16,8 @@
 <body>
     <div class="container">
         <div class="py-5 text-center">
-            <img class="d-block mx-auto mb-4"
-                src="https://blog.logrocket.com/wp-content/uploads/2020/01/logrocket-blog-logo.png" alt="Logo"
-                height="72">
             <h2>Customer's List</h2>
-            <p class="lead">Example of CRUD made with Node.js, Express, Handlebars and gRPC</p>
+            <p class="lead">Sample app made with Node.js, Express, Handlebars and gRPC</p>
         </div>
 
         <table class="table" id="customers_table">
@@ -31,7 +28,11 @@
                     <th>Age</th>
                     <th>Address</th>
                     <th>Action</th>
+                    <th><button class="btn btn-success" data-toggle="modal" data-target="#newCustomerModal">
+                            Add
+                        </button></th>
                 </tr>
+
             </thead>
             <tbody>
                 {{#each results}}
@@ -52,8 +53,9 @@
                 </tr>
                 {{/each}}
             </tbody>
+
         </table>
-        <button class="btn btn-success float-right" data-toggle="modal" data-target="#newCustomerModal">Add New</button>
+
     </div>
 
     <!-- New Customer Modal -->

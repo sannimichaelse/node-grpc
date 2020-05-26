@@ -1,7 +1,7 @@
 const grpc = require("grpc");
 const protoLoader = require("@grpc/proto-loader");
 const { v4: uuidv4 } = require("uuid");
-const PROTO_PATH = "./customers.proto";
+const PROTO_PATH = "../customers.proto";
 
 const packageDefinition = protoLoader.loadSync(PROTO_PATH, {
     keepCase: true,
